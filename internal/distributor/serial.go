@@ -63,7 +63,7 @@ func ReadSerial(h *Hub, port string, mode *serial.Mode) {
 		slog.Error("serial open failed", "port", port, "err", err)
 		os.Exit(1)
 	}
-	defer sp.Close()
+	defer sp.Close() //nolint:errcheck
 
 	buf := make([]byte, 4096)
 	for {
