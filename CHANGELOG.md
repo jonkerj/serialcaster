@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/jonkerj/serialcaster/compare/v1.0.4...v1.0.5) (2026-09-15)
+
+
+### Miscellaneous Chores
+
+* fixup cross compiles ([e161460](https://github.com/jonkerj/serialcaster/commit/e161460acc317f011582765c0e6c2f509909375d))
+
 ## [1.0.4](https://github.com/jonkerj/serialcaster/compare/v1.0.3...v1.0.4) (2026-09-15)
 
 
