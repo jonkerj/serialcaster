@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/jonkerj/serialcaster/compare/v1.0.3...v1.0.4) (2026-09-15)
+
+
+### Miscellaneous Chores
+
+* add linux/arm64 ([cf29a09](https://github.com/jonkerj/serialcaster/commit/cf29a0998ca836d36a834704ccf63c58bebd9eec))
+
 ## [1.0.3](https://github.com/jonkerj/serialcaster/compare/v1.0.1...v1.0.3) (2026-09-15)
 
 
