@@ -37,13 +37,13 @@ func (c *client) send(data []byte) bool {
 // on exit. Intended to run in its own goroutine.
 func (c *client) serve(h *Hub) {
 	if tc, ok := c.conn.(*net.TCPConn); ok {
-		tc.SetKeepAlive(true)
-		tc.SetKeepAlivePeriod(30 * time.Second)
+		_ = tc.SetKeepAlive(true)
+		_ = tc.SetKeepAlivePeriod(30 * time.Second)
 	}
 	h.register(c)
 	defer func() {
 		h.unregister(c)
-		c.conn.Close()
+		_ = c.conn.Close()
 	}()
 	for data := range c.ch {
 		if _, err := c.conn.Write(data); err != nil {

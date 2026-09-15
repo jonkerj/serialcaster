@@ -16,9 +16,6 @@ jobs:
           go-version-file: go.mod
           cache: true
 
-      - name: go vet
-        run: go vet ./...
-
       - uses: golangci/golangci-lint-action@v9
 
       - name: build
